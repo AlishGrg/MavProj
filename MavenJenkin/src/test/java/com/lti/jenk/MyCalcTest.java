@@ -1,26 +1,18 @@
 package com.lti.jenk;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class MyCalcTest {
+class MyCalcTest {
 
 	@Test
-	public void test1() {
-		assertEquals(25,new MyCalc().getSum(10, 15));
+	void test() {
+		assertEquals(40,new MyCalc().getSum(20, 20));
 	}
 	@Test
-	public void test2() {
-		assertEquals(40,new MyCalc().getSum(25, 15));
-	}
-	@Test
-	public void test3() {
-		assertEquals(5,new MyCalc().getDiff(15, 10));
-	}
-	@Test
-	public void test4() {
-		assertEquals(20,new MyCalc().getSum(22, 2));
+	void test1() {
+		assertEquals(0,new MyCalc().getDiff(20, 20));
 	}
 
 }
